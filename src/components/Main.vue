@@ -1,7 +1,7 @@
 <template>
     <div class="el-row">
         <div class="el-col-12">
-            <el-form :model="formData" label-width="80px">
+            <el-form label-width="80px">
                 <el-form-item label="活动名称">
                     <el-input v-model="formData.name"></el-input>
                 </el-form-item>
@@ -23,7 +23,7 @@
               <el-tag type="primary">{{formData.region}}</el-tag>
               <el-tag type="primary">{{formData.type}}</el-tag>
               <span slot="footer" class="dialog-footer">
-                <el-button @click.native="dialogVisible = false">取 消</el-button>
+                <el-button>取 消</el-button>
                 <el-button type="primary" @click.native="dialogVisible = false">确 定</el-button>
               </span>
         </el-dialog>
@@ -32,26 +32,7 @@
 </template>
 <script>
     export default {
-        name: "main",
-        data(){
-            return {
-                dialogVisible:false,
-                formData: {
-                    name: '',
-                    region: '',
-                    type: ''
-                }
-            }
-        },
-        methods: {
-            clickHandler() {
-                console.log('submit!');
-                this.dialogVisible = true;
-            },
-            cancelHandler(){
-                console.log("cancel!")
-            }
-        }
+
     }
 </script>
 <style>
