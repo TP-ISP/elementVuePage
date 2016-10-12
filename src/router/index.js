@@ -14,5 +14,6 @@ export default new Router({
     {path: '/main', name: 'main', component: main},
     {path: '/list', name: 'list', component: list},
     {path: '/hot', name: 'hot', component: hot},
+    {path: '*', redirect: '/main'}
   ]
 })

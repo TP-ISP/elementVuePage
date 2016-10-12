@@ -19,29 +19,34 @@
                                 <router-link activeClass="active" to="/hot" tag="a">
                                     Hot
                                 </router-link>
-                            </li>
+    </li>
                           </ul>
                       </div>
                   </header>
               </div>
               <div class="main-center">
                   <div class="page-container">
-                      <transition name="fade" mode="out-in">
-                          <router-view class="view"></router-view>
-                      </transition>
+                    <transition name="fade" mode="out-in">
+                            <router-view class="view"></router-view>
+                    </transition>                  
                   </div>
               </div>
           </div >
 </template>
 
 <script>
+import Router from 'vue-router'
 import Hello from './components/Hello'
+import Main from './components/Main'
+import List from './components/List'
+import Hot from './components/Hot'
 import "./App.css"
 import router from "./router"
 
 export default {
   components: {
-    Hello
+      'Hello':Hello,
+      'List':List
   }
 }
 </script>
