@@ -2,6 +2,8 @@
 
 > A Vue.js project
 
+采用elementui制作的一套界面原型
+
 ## Build Setup
 
 ``` bash
